@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBN.KG</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="loader" id="loader">
+
+  <div class="loader-logo">
+    URBN.KG
+  </div>
+
+</div>
+
+<header>
+
+  <div class="logo">
+    URBN.KG
+  </div>
+
+  <nav>
+
+    <a href="#products">
+      Товары
+    </a>
+
+    <a href="#about">
+      О нас
+    </a>
+
+    <a href="#contact">
+      Контакты
+    </a>
+
+  </nav>
+
+  <button class="theme-btn"
+          onclick="toggleTheme()">
+
+    🌙
+
+  </button>
+
+</header>
+
+<section class="hero reveal">
+
+  <div class="hero-content">
+
+    <span class="mini-text">
+      PREMIUM FITNESS STORE
+    </span>
+
+    <h1>
+      Тренируйся.
+      <br>
+      Выделяйся.
+    </h1>
+
+    <p>
+      Современные товары для домашних тренировок.
+      Минимализм. Стиль. Результат.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn"
+              onclick="scrollToProducts()">
+
+        Смотреть товары
+
+      </button>
+
+      <a href="https://t.me/fitgear_kg"
+         target="_blank"
+         class="secondary-btn">
+
+        Telegram
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="stats reveal">
+
+  <div class="stat-card">
+
+    <h2>100+</h2>
+
+    <p>
+      Довольных клиентов
+    </p>
+
+  </div>
+
+  <div class="stat-card">
+
+    <h2>24/7</h2>
+
+    <p>
+      Быстрая связь
+    </p>
+
+  </div>
+
+  <div class="stat-card">
+
+    <h2>KG</h2>
+
+    <p>
+      Доставка по Кыргызстану
+    </p>
+
+  </div>
+
+</section>
+
+<section class="products reveal"
+         id="products">
+
+  <div class="section-title">
+
+    <h2>
+      Популярные товары
+    </h2>
+
+    <p>
+      Выбери своё оборудование
+    </p>
+
+  </div>
+
+  <div class="products-grid">
+
+    <div class="card"
+         onclick="openProduct(
+         'Жгуты',
+         '1000 сом',
+         'Идеально для домашних тренировок',
+         'https://via.placeholder.com/500'
+         )">
+
+      <div class="badge">
+        🔥 Хит
+      </div>
+
+      <img src="https://via.placeholder.com/500">
+
+      <div class="card-info">
+
+        <h3>
+          Жгуты
+        </h3>
+
+        <p>
+          1000 сом
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="card"
+         onclick="openProduct(
+         'Упоры',
+         '1200 сом',
+         'Для мощных отжиманий',
+         'https://via.placeholder.com/500'
+         )">
+
+      <div class="badge">
+        ✅ В наличии
+      </div>
+
+      <img src="https://via.placeholder.com/500">
+
+      <div class="card-info">
+
+        <h3>
+          Упоры
+        </h3>
+
+        <p>
+          1200 сом
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="card"
+         onclick="openProduct(
+         'Ролик',
+         '900 сом',
+         'Для пресса и силы корпуса',
+         'https://via.placeholder.com/500'
+         )">
+
+      <div class="badge">
+        ⚡ Популярно
+      </div>
+
+      <img src="https://via.placeholder.com/500">
+
+      <div class="card-info">
+
+        <h3>
+          Ролик
+        </h3>
+
+        <p>
+          900 сом
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="advantages reveal"
+         id="about">
+
+  <div class="section-title">
+
+    <h2>
+      Почему выбирают нас
+    </h2>
+
+  </div>
+
+  <div class="advantages-grid">
+
+    <div class="advantage-card">
+
+      🚚
+
+      <h3>
+        Быстрая доставка
+      </h3>
+
+      <p>
+        Доставка по Бишкеку и Кыргызстану
+      </p>
+
+    </div>
+
+    <div class="advantage-card">
+
+      💪
+
+      <h3>
+        Качество
+      </h3>
+
+      <p>
+        Только проверенные товары
+      </p>
+
+    </div>
+
+    <div class="advantage-card">
+
+      ⚡
+
+      <h3>
+        Поддержка
+      </h3>
+
+      <p>
+        Отвечаем максимально быстро
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="reviews reveal">
+
+  <div class="section-title">
+
+    <h2>
+      Отзывы
+    </h2>
+
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+
+      <h3>
+        ⭐⭐⭐⭐⭐
+      </h3>
+
+      <p>
+        Очень качественные жгуты,
+        доставка быстрая.
+      </p>
+
+      <span>
+        — Айбек
+      </span>
+
+    </div>
+
+    <div class="review-card">
+
+      <h3>
+        ⭐⭐⭐⭐⭐
+      </h3>
+
+      <p>
+        Сайт выглядит очень круто,
+        товар тоже отличный.
+      </p>
+
+      <span>
+        — Данияр
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact reveal"
+         id="contact">
+
+  <div class="section-title">
+
+    <h2>
+      Контакты
+    </h2>
+
+  </div>
+
+  <img class="map"
+       src="https://via.placeholder.com/1200x350">
+
+  <p class="phone">
+    📞 +996 995 988 772
+  </p>
+
+  <div class="socials">
+
+    <a href="https://instagram.com/fitgear_kg_"
+       target="_blank">
+
+      Instagram
+
+    </a>
+
+    <a href="https://wa.me/996995988772?text=Здравствуйте,%20хочу%20заказать%20товар"
+       target="_blank">
+
+      WhatsApp
+
+    </a>
+
+    <a href="https://t.me/fitgear_kg"
+       target="_blank">
+
+      Telegram
+
+    </a>
+
+  </div>
+
+</section>
+
+<a class="floating"
+   href="https://wa.me/996995988772?text=Здравствуйте,%20хочу%20заказать%20товар"
+   target="_blank">
+
+  💬 Написать
+
+</a>
+
+<div class="modal"
+     id="modal">
+
+  <div class="modal-content">
+
+    <span class="close"
+          onclick="closeModal()">
+
+      ×
+
+    </span>
+
+    <img id="modalImg">
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDesc"></p>
+
+    <p id="modalPrice"></p>
+
+    <a class="modal-btn"
+       href="https://wa.me/996995988772?text=Здравствуйте,%20хочу%20заказать%20товар"
+       target="_blank">
+
+      Заказать
+
+    </a>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
